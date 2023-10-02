@@ -6,6 +6,6 @@
 • Incorporated a low-stock warning system that triggers alerts when item counts fall below a predefined threshold.
 <br>
 • Built a reporting feature allowing departments to generate a CSV report, summarizing the current state of their inventory.
-<br>
+<br><br><br>
 
-![Alt text]([image link](https://ibb.co/Wf8ygHN)https://ibb.co/Wf8ygHN)
+
