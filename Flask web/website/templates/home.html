@@ -1,0 +1,32 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content 
+%}
+<h1 align="center">Inventory</h1>
+<ul class="list-group list-group-flush" id="inventory">
+  {% for inventory in user.inventory %}
+  <li class="list-group-item">
+    {{ inventory.item_name }} - Quantity: {{ inventory.count }}
+    <button type="button" class="close" onClick="deleteInventory({{ inventory.id }})">
+        <span aria-hidden="true">&times;</span>
+      </button>
+  </li>
+  {% endfor %}
+</ul>
+
+<div align="center">
+  <button type="button" onclick="generateReport()" class="btn btn-secondary mb-3">Generate Report</button>
+</div>
+
+<form method="POST">
+  <div class="form-group">
+    <label for="inventory_name">Item Name</label>
+    <input type="text" name="inventory_name" id="inventory_name" class="form-control" placeholder="Enter item name">
+  </div>
+  <div class="form-group">
+    <label for="inventory_count_change">Quantity</label>
+    <input type="number" name="inventory_count_change" id="inventory_count_change" class="form-control" placeholder="Enter quantity">
+  </div>
+  <div align="center">
+    <button type="submit" class="btn btn-primary">Add/Update Item</button>
+  </div>
+</form>
+{% endblock %}
