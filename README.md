@@ -8,3 +8,4 @@
 • Built a reporting feature allowing departments to generate a CSV report, summarizing the current state of their inventory.
 <br>
 
+![Alt text]([image link](https://ibb.co/Wf8ygHN)https://ibb.co/Wf8ygHN)
